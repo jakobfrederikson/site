@@ -1,0 +1,29 @@
+{
+    "Books": {
+        "2025": [
+            {
+                "Title": "Mistborn: The Final Empire",
+                "Published": "2006-07-17",
+                "Author": "Brandon Sanderson",
+                "NumberRating": "9/10",
+                "Review": "This is the book that got me back into reading. It certainly felt cliche at times, but the lore, characters, and world building just had me wanting more each time I finished a chapter. The main characters are a fantastic duo, and you just know there's so much more for them to learn about their powers as the series progresses."
+            },
+            {
+                "Title": "Dune",
+                "Published": "1965-10-1",
+                "Author": "Frank Herbert",
+                "NumberRating": "7/10",
+                "Review": "I found this book interesting and incredibly unique compared to anything I have read before. I was quite immersed with the descriptions of Paul and his mother navigating Arrakis. However, I felt it moved at an odd pace. The middle half of the book was slow, but rich of story. Then the ending of the book felt too fast in comparison, as if it was skipping over too much detail. I do not feel inclined to read the rest of the books in the series, but I did enjoy my time reading this book."
+            }
+        ],
+        "2026": [
+            {
+                "Title": "Mistborn: The Well of Ascension",
+                "Published": "2007-08-21",
+                "Author": "Brandon Sanderson",
+                "NumberRating": "X",
+                "Review": "I'm currently reading this."
+            }
+        ]
+    }
+}

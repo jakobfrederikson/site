@@ -8,7 +8,6 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	position: relative;
-	overflow: hidden;
 	background-image: none;
 }
 
@@ -56,4 +55,8 @@ a:hover {
   font-family: "Courier Prime", monospace;
   font-weight: 700;
   font-style: normal;
+}
+
+.books-list {
+    text-align: start;
 }
