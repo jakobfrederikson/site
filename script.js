@@ -1,8 +1,7 @@
 import booksObj from './books.json' with { type: 'json' };
 
-let booksList = document.getElementById("books");
+let readingList = document.getElementById("readingList");
 
-console.log(booksObj);
 let books = booksObj['Books'];
 for (const [year, list_of_books] of Object.entries(books)) {
     createBookReviewsByYear(year, list_of_books);
@@ -22,8 +21,8 @@ function createBookReviewsByYear(year, list_of_books) {
         let bookItem = document.createElement("div");
         bookItem.id = `${book.Title}`
 
-        let title = document.createElement("h4");
-        title.textContent = `${book.Title} | ${book.Author}`;
+        let title = document.createElement("p");
+        title.innerHTML = `<strong>${book.Title}</strong> - <strong>${book.Author}</strong> | ${book.ShortReview}`;
         bookItem.appendChild(title);
 
         // Who cares about the publish date?
@@ -38,14 +37,51 @@ function createBookReviewsByYear(year, list_of_books) {
         // published.innerHTML = `<small>${formattedDate}</small>`;
         // bookItem.appendChild(published);
 
-        let ratingReview = document.createElement("p");
-        ratingReview.innerHTML = `<strong>${book.NumberRating}</strong> - ${book.Review}`;
-        bookItem.append(ratingReview);
+        // I don't really care enough to write full reviews either!
+        // let ratingReview = document.createElement("p");
+        // ratingReview.innerHTML = `<strong>${book.NumberRating}</strong> - ${book.Review}`;
+        // bookItem.append(ratingReview);
 
 
         contentDiv.appendChild(bookItem);
+        let itemBreak = document.createElement("hr");
+        contentDiv.append(itemBreak)
     }
 
-    booksList.appendChild(contentDiv);
+    readingList.appendChild(contentDiv);
+    let itemBreak = document.createElement("br");
+    readingList.append(itemBreak)
 }
 
+// ================================
+//      CREATE GAMES LIST
+// ================================
+import gamesObj from './gaming.json' with { type: 'json' };
+
+let gamingList = document.getElementById("gamingList");
+let games = gamesObj["Games"];
+
+for (let i = 0; i < games.length; i++) {
+    createAndAppendGameListItem(games[i])
+}
+
+function createAndAppendGameListItem(game) {
+    console.log(game);
+
+    let contentDiv = document.createElement("div");
+
+    let gameItem = document.createElement("div");
+    gameItem.id = `${game.Title}`
+
+    let gameItemContent = document.createElement("p");
+    gameItemContent.innerHTML = `<strong>${game.Title}</strong> - [<strong>${game.Platform}</strong>]  | ${game.ShortReview}`;
+
+    gameItem.append(gameItemContent);
+
+    contentDiv.append(gameItem);
+
+    gamingList.append(contentDiv);
+
+    let itemBreak = document.createElement("hr");
+    gamingList.append(itemBreak)
+}

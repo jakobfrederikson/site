@@ -17,7 +17,7 @@
 <body>
 
 	<main>
-		<h1 class="courier-prime-bold">Jakob Frederikson</h1>
+		<h1 class="courier-prime-bold">JAKOB FREDERIKSON</h1>
 		<div class="courier-prime-regular">
 			<span style="flex: auto; flex-direction: row;">
 				<a href="https://github.com/jakobfrederikson" target="_blank">GitHub</a>
@@ -34,23 +34,49 @@
 
 		<br/>
 
-		<div class="content courier-prime-regular">
+		<div class="courier-prime-regular">
 			<h2>About</h2>
-			<p>I enoy playing games, programming, cooking, and reading. I'm quite introverted.</p>
+			<p>I enoy playing games, programming, cooking (although, I'm a picky eater), and reading. I'm quite introverted.</p>
 		</div>
 
 		<br/>
 
-		<div class="content courier-prime-regular">
-			<h2>Reading</h2>
-			<div id="books" class="books-list">
-			</div>			
+		<div class="courier-prime-regular" style="padding: 15px;">
+			<div class="tab">
+				<button id="defaultOpen" class="tab-links courier-prime-regular" onclick="openTab(event, 'readingList')"><h2>Reading</h2></button>
+				<button class="tab-links courier-prime-regular" onclick="openTab(event, 'gamingList')"><h2>Favourite Games</h2></button>				
+			</div>
+
+			<div id="readingList" class="hobby-list">
+			</div>
+
+			<div id="gamingList" class="hobby-list">
+			</div>
 		</div>		
 			
 	</main>
 
 
 	<script type="module" src="script.js"></script>
+
+	<script>
+		function openTab(event, hobby) {
+			let tabContent = document.getElementsByClassName("hobby-list");
+			for (let i = 0; i < tabContent.length; i++) {
+				tabContent[i].style.display = "none";
+			}
+
+			let tabLinks = document.getElementsByClassName("tab-links");
+			for (let i = 0; i < tabContent.length; i++) {
+				tabLinks[i].className = tabLinks[i].className.replace(" active", " ");
+			}
+
+			document.getElementById(hobby).style.display = "block";
+			event.currentTarget.className += " active";
+		}
+
+		document.getElementById("defaultOpen").click();
+	</script>
 
 </body>
 

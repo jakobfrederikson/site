@@ -31,7 +31,7 @@ body::before {
 	z-index: -1;
 	background-color: #F2F0EF;
 	background-image: url("random-lines.png");
-	animation: backgroundScroll 200s linear infinite;
+	animation: backgroundScroll 180s linear infinite;
 }
 
 a {
@@ -57,6 +57,28 @@ a:hover {
   font-style: normal;
 }
 
-.books-list {
+.hobby-list {
     text-align: start;
+}
+
+.tab {
+	overflow: hidden;
+}
+
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 15px;
+	transition: 0.3s;
+	color: #306230;
+}
+
+.tab button:hover {
+	color: #8bac0f;
+}
+
+.tab button.active {
+	color: #8bac0f;
 }

@@ -1,0 +1,39 @@
+{
+    "Games": [
+        {
+            "Title": "Stray",
+            "Platform": "PS5",
+            "ShortReview": "LOVED IT! I ❤️ Cats."
+        },
+        {
+            "Title": "The Elder Scrolls V: Skyrim Special Edition",
+            "Platform": "PC",
+            "ShortReview": "Fantastic, took my life away for 2 weeks."
+        },
+        {
+            "Title": "The Legend of Zelda: Breath of the Wild",
+            "Platform": "Switch",
+            "ShortReview": "Very good, loved the art style and puzzles."
+        },
+        {
+            "Title": "Baldurs Gate 3",
+            "Platform": "PC",
+            "ShortReview": "Unreal, really gets you hooked into the DnD world."
+        },
+        {
+            "Title": "Vampire Survivors",
+            "Platform": "PS5",
+            "ShortReview": "The best way to chill after work 😎."
+        },
+        {
+            "Title": "Doom (2016)",
+            "Platform": "PC",
+            "ShortReview": "Mick Gordon."
+        },
+        {
+            "Title": "CS2 (CS:GO, CS:S, CS1.6)",
+            "Platform": "PC",
+            "ShortReview": "I've played the CS series my whole life, and I love playing this with my friends!"
+        }
+    ]
+}
