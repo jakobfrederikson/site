@@ -1,0 +1,9 @@
+{
+    "Projects": [
+        {
+            "Title": "Basic Steam Stats",
+            "ShortDesc": "Django project that uses the Steam API to pull steam user data and display basic steam stats.",
+            "Link": "https://worzell.pythonanywhere.com/"
+        }
+    ]
+}

@@ -1,3 +1,35 @@
+// ================================
+//        DISPLAY PROJECTS
+// ================================
+import projectsObj from './projects.json' with { type: 'json' };
+
+let projectsDiv = document.getElementById("projects");
+
+let projects = projectsObj["Projects"]
+for (let project of projects) {
+    let projectItem = document.createElement("div");
+    projectItem.id = `${project.Title}`;
+
+    let projectTitle = document.createElement("h3");
+    projectTitle.textContent = `${project.Title}`;
+    projectItem.appendChild(projectTitle);
+
+    let projectLink = document.createElement("a");
+    projectLink.textContent = `${project.Link}`;
+    projectLink.setAttribute("href", `${project.Link}`);
+    projectLink.setAttribute("target", "_blank");
+    projectItem.appendChild(projectLink);
+
+    let projectDesc = document.createElement("p");
+    projectDesc.textContent = `${project.ShortDesc}`;
+    projectItem.appendChild(projectDesc);
+
+    projectsDiv.appendChild(projectItem);
+}
+
+// ================================
+//      CREATE READING LIST
+// ================================
 import booksObj from './books.json' with { type: 'json' };
 
 let readingList = document.getElementById("readingList");
