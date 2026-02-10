@@ -23,9 +23,17 @@
                 "Title": "Mistborn: The Well of Ascension",
                 "Published": "2007-08-21",
                 "Author": "Brandon Sanderson",
+                "NumberRating": "7/10",
+                "ShortReview": "Still quite good, like the first, but it was very much 'set up for the third book'. I think some of the story was a bit too cliche/predictable, and I could skim-read a lot without missing anything.",
+                "Review": ""
+            },
+            {
+                "Title": "Mistborn: The Hero of Ages",
+                "Published": "2008-10-14",
+                "Author": "Brandon Sanderson",
                 "NumberRating": "X",
-                "ShortReview": "Currently reading this.",
-                "Review": "I'm currently reading this."
+                "ShortReview": "I'm currently reading this.",
+                "Review": ""
             }
         ]
     }
