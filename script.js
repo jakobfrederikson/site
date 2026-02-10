@@ -98,8 +98,6 @@ for (let i = 0; i < games.length; i++) {
 }
 
 function createAndAppendGameListItem(game) {
-    console.log(game);
-
     let contentDiv = document.createElement("div");
 
     let gameItem = document.createElement("div");

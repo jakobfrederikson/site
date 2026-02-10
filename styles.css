@@ -9,7 +9,7 @@ body {
 	min-height: 100vh;
 	position: relative;
 	background-image: none;
-	padding: 5px;
+	padding: 6px;
 }
 
 @keyframes backgroundScroll {
