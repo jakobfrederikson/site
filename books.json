@@ -34,6 +34,14 @@
                 "NumberRating": "X",
                 "ShortReview": "I'm currently reading this.",
                 "Review": ""
+            },
+            {
+                "Title": "The C# Player's Guide (Fifth Edition)",
+                "Published": "2022-01-14",
+                "Author": "RB Whitaker",
+                "NumberRating": "X",
+                "ShortReview": "I originally read this through in the summer of 2022/2023 and loved it (still do), C# quickly became my favourite language! I have since bought the book again in 2026 to have the updated PDF version along with its latest book expansions (C# 13 Expansion released 20 Jan 2025). I have some of my interpretations of the books 'boss battles' on my GitHub if you're interested to see what challenges are available.",
+                "Review": ""
             }
         ]
     }
