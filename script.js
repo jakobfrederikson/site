@@ -53,27 +53,21 @@ function createBookReviewsByYear(year, list_of_books) {
         let bookItem = document.createElement("div");
         bookItem.id = `${book.Title}`
 
-        let title = document.createElement("p");
-        title.innerHTML = `<strong>${book.Title}</strong> - <strong>${book.Author}</strong> | ${book.ShortReview}`;
-        bookItem.appendChild(title);
+        let publishDate = new Date(book.Published);
+        const formattedDate = new Intl.DateTimeFormat('en-NZ', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric'
+        }).format(publishDate);
 
-        // Who cares about the publish date?
-        // -----------------------------------
-        // let publishDate = new Date(book.Published);
-        // const formattedDate = new Intl.DateTimeFormat('en-NZ', {
-        //     day: '2-digit',
-        //     month: 'long',
-        //     year: 'numeric'
-        // }).format(publishDate);
-        // let published = document.createElement("p");
-        // published.innerHTML = `<small>${formattedDate}</small>`;
-        // bookItem.appendChild(published);
+        let title = document.createElement("p");
+        title.innerHTML = `<strong>${book.Title}</strong> - <strong>${book.Author}</strong> | ${formattedDate} <br> ${book.ShortReview}`;
+        bookItem.appendChild(title);
 
         // I don't really care enough to write full reviews either!
         // let ratingReview = document.createElement("p");
         // ratingReview.innerHTML = `<strong>${book.NumberRating}</strong> - ${book.Review}`;
         // bookItem.append(ratingReview);
-
 
         contentDiv.appendChild(bookItem);
         let itemBreak = document.createElement("hr");
