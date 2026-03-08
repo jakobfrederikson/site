@@ -4,6 +4,11 @@
             "Title": "Basic Steam Stats",
             "ShortDesc": "Django project that uses the Steam API to pull steam user data and display basic steam stats.",
             "Link": "https://worzell.pythonanywhere.com/"
+        },
+        {
+            "Title": "BucketBudget",
+            "ShortDesc": "An updated version of my CS50 final project made in Flask. BucketBudget helps you divide your net income into percentage based buckets. I am currently working on this, but please feel free to look at the source code.",
+            "Link": "https://github.com/jakobfrederikson/BucketBudget"
         }
     ]
 }
