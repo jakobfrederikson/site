@@ -2,14 +2,16 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	line-height: 1.4;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
 	position: relative;
 	background-image: none;
 	padding: 6px;
+}
+
+.main-content {	
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 @keyframes backgroundScroll {
@@ -41,6 +43,12 @@ a {
     color: #306230;
 }
 
+#projects a {
+	display: block;
+	overflow-wrap: break-word;
+	word-break: break-all;
+}
+
 a:hover {
     color: #8bac0f;
     text-decoration-line: underline;
@@ -63,7 +71,9 @@ a:hover {
 }
 
 .tab {
-	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .tab button {
