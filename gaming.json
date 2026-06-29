@@ -34,6 +34,11 @@
             "Title": "CS2 (CS:GO, CS:S, CS1.6)",
             "Platform": "PC",
             "ShortReview": "I've played the CS series my whole life, and I love playing this with my friends!"
+        },
+        {
+            "Title": "Astro Bot",
+            "Platform": "PS5",
+            "ShortReview": "I've never been one for platforming games, but this is an exception. Such a fun ride, loved how the DualSense controller was utilised!"
         }
     ]
 }
